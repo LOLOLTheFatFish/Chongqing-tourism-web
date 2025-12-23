@@ -129,7 +129,7 @@ const TimelineCard = ({ data, index }: { data: typeof timelineData[0], index: nu
         <p className="text-gray-300 mb-6 leading-relaxed">{data.content}</p>
         
         <div className="font-mono text-sm border-t border-gray-800 pt-4">
-          <div className="mb-2 text-white font-bold">> KEY_DATA: <span className={data.color}>{data.stats}</span></div>
+          <div className="mb-2 text-white font-bold">&gt; KEY_DATA: <span className={data.color}>{data.stats}</span></div>
           <div className="flex flex-wrap gap-2">
             {data.details.map((detail, i) => (
               <span key={i} className="bg-white/5 px-2 py-1 rounded text-xs text-gray-400">#{detail}</span>
